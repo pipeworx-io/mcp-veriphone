@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-veriphone",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Veriphone MCP — wraps the Veriphone phone-validation API (veriphone.io)",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-ea3d979a916acaa4e4fce9bd8ba14a07e2f88cd0f6544d42e97bb764337659c6",
-    "sourceCommit": "b0fb3c31386cf0256dcf1e2f1b3440435a87ec35"
+    "sourceHash": "v1-308209668bbfdd9945ba19e0adf753af67f6322243bb80b155b5e48b14389437",
+    "sourceCommit": "2cb50b368da3267446f2b6f6a3ddbd3d0eed3d73"
   }
 }
