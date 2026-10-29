@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-veriphone",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Veriphone MCP — wraps the Veriphone phone-validation API (veriphone.io)",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-veriphone": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "veriphone"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-veriphone.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/veriphone",
   "pipeworx": {
-    "sourceHash": "v1-308209668bbfdd9945ba19e0adf753af67f6322243bb80b155b5e48b14389437",
-    "sourceCommit": "2cb50b368da3267446f2b6f6a3ddbd3d0eed3d73"
+    "mode": "gateway",
+    "slug": "veriphone",
+    "gatewaySlug": "veriphone",
+    "sourceHash": "v1-8d052502eed8d2c5c8e4c8b7171298daeb2249460470ece6773cf3a642ef7273",
+    "sourceCommit": "98853f34516646cb7c4c1460f09249b262c0269e"
   }
 }
